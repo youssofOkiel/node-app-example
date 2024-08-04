@@ -3,9 +3,7 @@ services:
   node-app:
     build:
       context: .
-      args:
       target: dev
-        - NODE_ENV=development
     volumes:
       - ./src:/app/src:ro
     environment:
